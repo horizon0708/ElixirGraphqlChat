@@ -48,7 +48,10 @@ defmodule GraphqlChat.Mixfile do
       {:cors_plug, "~> 1.5"},
       {:oauth2, "~> 0.9"},
       {:absinthe_phoenix, "~> 1.4.0"},
-      {:paginator, "~> 0.3"}
+      {:paginator, "~> 0.3"},
+      {:mix_docker, "~> 0.5.0"},
+      {:distillery, "~> 1.5", runtime: false}
+
     ]
   end
 

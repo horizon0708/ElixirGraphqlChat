@@ -15,8 +15,10 @@ use Mix.Config
 # which you typically run after static files are built.
 config :graphql_chat, GraphqlChatWeb.Endpoint,
   load_from_system_env: true,
-  url: [host: "example.com", port: 80],
-  cache_static_manifest: "priv/static/cache_manifest.json"
+  url: [host: "localhost", port: "${PORT}"],
+  server: true,
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  check_origin: ["http://devchat.jameskim.co.nz"]
 
 # Do not print debug messages in production
 config :logger, level: :info

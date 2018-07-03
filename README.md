@@ -1,19 +1,11 @@
 # GraphqlChat
 
-To start your Phoenix server:
+This is a mess because it was made in a hurry.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+There are a number of things I need to fix/work on:
+1. Authorisation. Authentication is implemented, but there are still resources that are not properly secured. I am likely to restructure my resources so that authorisation only needs to be done on at the top node.
+2. Cleaner code.
+3. Better pagination
+4. Presence.
+5. More tests.
+6. I need to work out how to seed when I deploy with docker.

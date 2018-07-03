@@ -45,6 +45,3 @@ config :graphql_chat, GraphqlChat.Repo,
   hostname: "localhost",
   pool_size: 10
 
-config :graphql_chat, GraphqlChatWeb.GitHub,
-  client_id: "315df44431af90239d19",
-  client_secret: "557c2bc479766a5a8cf95a1b6b0db98b66660002"
